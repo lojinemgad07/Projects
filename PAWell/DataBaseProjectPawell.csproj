@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{249EDA2E-ABFA-4AB2-9C7E-EE04CB4F6F96}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DataBaseProjectPawell</RootNamespace>
+    <AssemblyName>DataBaseProjectPawell</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport.Compat, Version=2026.1.3.0, Culture=neutral, PublicKeyToken=5ceb240df42bf6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.Compat.2026.1.3\lib\net462\FastReport.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.DataVisualization, Version=2026.1.3.0, Culture=neutral, PublicKeyToken=5ceb240df42bf6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.DataVisualization.2026.1.3\lib\net462\FastReport.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Animal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Animal.Designer.cs">
+      <DependentUpon>Add Animal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Vet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Vet.Designer.cs">
+      <DependentUpon>Add Vet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAdmin.Designer.cs">
+      <DependentUpon>AddAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Profile.Designer.cs">
+      <DependentUpon>Admin Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAvailAppt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAvailAppt.Designer.cs">
+      <DependentUpon>AdminAvailAppt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalProfile.Designer.cs">
+      <DependentUpon>AnimalProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvailableVaccines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvailableVaccines.Designer.cs">
+      <DependentUpon>AvailableVaccines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerLogin.Designer.cs">
+      <DependentUpon>CustomerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBManager.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="CustomerOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerOptions.Designer.cs">
+      <DependentUpon>CustomerOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingAppointments.Designer.cs">
+      <DependentUpon>BookingAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalStatistics.Designer.cs">
+      <DependentUpon>HospitalStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalRecords.Designer.cs">
+      <DependentUpon>MedicalRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Species.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Species.Designer.cs">
+      <DependentUpon>Species.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartUp.Designer.cs">
+      <DependentUpon>StartUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VetAvail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VetAvail.Designer.cs">
+      <DependentUpon>VetAvail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VetLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VetLogin.Designer.cs">
+      <DependentUpon>VetLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vetprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vetprofile.Designer.cs">
+      <DependentUpon>Vetprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAdminProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAdminProfile.Designer.cs">
+      <DependentUpon>ViewAdminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCustomerProfile.Designer.cs">
+      <DependentUpon>ViewCustomerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VetOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VetOptions.Designer.cs">
+      <DependentUpon>VetOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProfile.Designer.cs">
+      <DependentUpon>ViewProfile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Animal.resx">
+      <DependentUpon>Add Animal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Vet.resx">
+      <DependentUpon>Add Vet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAdmin.resx">
+      <DependentUpon>AddAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Profile.resx">
+      <DependentUpon>Admin Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAvailAppt.resx">
+      <DependentUpon>AdminAvailAppt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalProfile.resx">
+      <DependentUpon>AnimalProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvailableVaccines.resx">
+      <DependentUpon>AvailableVaccines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingAppointments.resx">
+      <DependentUpon>BookingAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerLogin.resx">
+      <DependentUpon>CustomerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerOptions.resx">
+      <DependentUpon>CustomerOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalStatistics.resx">
+      <DependentUpon>HospitalStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalRecords.resx">
+      <DependentUpon>MedicalRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Species.resx">
+      <DependentUpon>Species.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartUp.resx">
+      <DependentUpon>StartUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VetAvail.resx">
+      <DependentUpon>VetAvail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VetLogin.resx">
+      <DependentUpon>VetLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VetOptions.resx">
+      <DependentUpon>VetOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vetprofile.resx">
+      <DependentUpon>Vetprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAdminProfile.resx">
+      <DependentUpon>ViewAdminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCustomerProfile.resx">
+      <DependentUpon>ViewCustomerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProfile.resx">
+      <DependentUpon>ViewProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
