@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %}Favorites{% endblock %}
+{% block content %}
+<h2 >Recipes</h2>
+<div class = "row">
+    {% for recipe in recipes %}
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">{{recipe.title}}</h5>
+          <p class="card-text text-muted">{{recipe.category}}</p>
+          <h4> Ingredients</h4>
+          <p>{{recipe.ingredients}}</p>
+          <h4> Instructions</h4>
+          <p>{{recipe.instructions}}</p>
+
+          {% if session.get("user_id") == recipe.user_id %}
+          <div>
+            <a href="/edit/{{ recipe.id }}" class="btn btn-primary">Edit</a>
+            <form action="/delete/{{ recipe.id }}" method="post" class="d-inline">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+          </div>
+          {% endif %}
+
+        </div>
+    </div>
+    </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}

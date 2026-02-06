@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block title %}Edit Recipe{% endblock %}
+{% block content %}
+
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <h2 class="mb-4 text-center">Edit Recipe</h2>
+
+    <form action="/edit/{{recipe.id}}" method="post">
+      <div class="mb-3">
+        <label for="title" class="form-label">Edit</label>
+        <input autocomplete="off" autofocus class="form-control" id="title" name="title" type="text" required>
+      </div>
+      <div class="mb-3">
+        <label for="ingredients" class="form-label">Ingredients</label>
+        <textarea class="form-control" id="ingredients" name="ingredients" rows="3" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="instructions" class="form-label">Instructions</label>
+        <textarea class="form-control" id="instructions" name="instructions" rows="4" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label>category</label>
+        <select name="category" class="form-control">
+            <option value="Main Dish">Main Dish</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Appetizer">Appetizer</option>
+            <option value="Drink">Drink</option>
+        </select>
+
+      </div>
+      <button class="btn btn-primary w-100" type="submit">Update</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

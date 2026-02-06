@@ -1,0 +1,18 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffaf4 ;
+    color: #333;
+}
+
+.navbar {
+    background-color: #ffda79;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #8b4513;
+}
+footer {
+    font-size: 0.85rem;
+    color: #666;
+}
