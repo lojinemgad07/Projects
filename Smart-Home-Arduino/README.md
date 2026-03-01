@@ -1,38 +1,38 @@
 Smart Home Automation System
 Arduino | Embedded C/C++ | UART | Sensors | Servo Control
 
-Overview
+Overview:
 Developed a smart home and smart garage automation system using an Arduino microcontroller.
 The firmware integrates environmental sensing, secure Bluetooth access control, motion-based lighting, smoke detection, and automated parking management.
 
 Focus: Embedded systems design, real-time logic, UART communication, and hardware/software integration.
 
-Key Features
+Key Features:
 Bluetooth PIN Authentication
 4-digit password verification
 Servo-controlled smart door lock
 Lockout after 3 failed attempts
 
-Environmental Monitoring
+Environmental Monitoring:
 DHT11 temperature & humidity sensing
 Real-time LCD display (I2C)
 
-Smart Lighting
+Smart Lighting:
 LDR-based night detection
 PIR motion sensing
 Manual override switch
 
-Smoke Detection System
+Smoke Detection System:
 Analog gas sensor monitoring
 Non-blocking LED alert using millis()
 
-Smart Garage Management
+Smart Garage Management:
 Entry/exit PIR sensors
 Parking availability tracking (max = 2)
 Automatic servo-controlled gate
 LED parking indicators
 
-Technical Highlights
+Technical Highlights:
 Embedded C/C++ firmware design
 UART communication via SoftwareSerial
 I2C LCD integration
@@ -41,7 +41,7 @@ Non-blocking timing using millis()
 Real-time sensor fusion and decision logic
 Hardware/software debugging and integration testing
 
-Technologies & Components
+Technologies & Components:
 Arduino UNO
 DHT11
 PIR Sensors
